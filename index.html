@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.webp">
+    <title>Odin - Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="display">
+            <div class="previous-calculations">
+
+            </div>
+
+            <div class="current-calculations">
+                <div class="current-answer"></div>
+                <div class="current-working">
+                    <input type="text" id="user-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="clear" class="top-signs">AC</button>
+            <button id="delete" class="top-signs"><i class="fa-solid fa-delete-left"></i></button>
+            <button id="percentage" class="top-signs">%</button>
+            <button id="division" class="calculating-signs"><i class="fa-solid fa-divide"></i></button>
+            <button id="seven" class="numbers" value="7">7</button>
+            <button id="eight" class="numbers">8</button>
+            <button id="nine" class="numbers">9</button>
+            <button id="multiply" class="calculating-signs"><i class="fa-solid fa-xmark"></i></button>
+            <button id="four" class="numbers">4</button>
+            <button id="five" class="numbers">5</button>
+            <button id="six" class="numbers">6</button>
+            <button id="minus" class="calculating-signs">-</button>
+            <button id="one" class="numbers">1</button>
+            <button id="two" class="numbers">2</button>
+            <button id="three" class="numbers">3</button>
+            <button id="plus" class="calculating-signs">+</button>
+            <button id="equals" class="calculating-signs">=</button>
+            <button id="decimal" class="numbers">.</button>
+            <button id="zero" class="numbers">0</button>
+            <button id="" class="numbers"><i class="fa-solid fa-calculator"></i></button>
+
+        </div>
+    </div>
+
+
+    <script defer src="script.js"></script>
+</body>
+</html>
