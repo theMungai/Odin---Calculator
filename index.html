@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" type="image/x-icon" href="favicon.webp">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>Odin - Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,33 +21,32 @@
             <div class="current-calculations">
                 <div class="current-answer"></div>
                 <div class="current-working">
-                    <input type="text" id="user-input">
+                    <input type="text" id="user-input" >
                 </div>
             </div>
         </div>
 
         <div class="actions">
-            <button id="clear" class="top-signs">AC</button>
-            <button id="delete" class="top-signs"><i class="fa-solid fa-delete-left"></i></button>
-            <button id="percentage" class="top-signs">%</button>
-            <button id="division" class="calculating-signs"><i class="fa-solid fa-divide"></i></button>
-            <button id="seven" class="numbers" value="7">7</button>
-            <button id="eight" class="numbers">8</button>
-            <button id="nine" class="numbers">9</button>
-            <button id="multiply" class="calculating-signs"><i class="fa-solid fa-xmark"></i></button>
-            <button id="four" class="numbers">4</button>
-            <button id="five" class="numbers">5</button>
-            <button id="six" class="numbers">6</button>
-            <button id="minus" class="calculating-signs">-</button>
-            <button id="one" class="numbers">1</button>
-            <button id="two" class="numbers">2</button>
-            <button id="three" class="numbers">3</button>
-            <button id="plus" class="calculating-signs">+</button>
-            <button id="equals" class="calculating-signs">=</button>
-            <button id="decimal" class="numbers">.</button>
-            <button id="zero" class="numbers">0</button>
-            <button id="" class="numbers"><i class="fa-solid fa-calculator"></i></button>
-
+            <button id="clear" class="top-signs">Clear</button>
+            <button id="delete" class="top-signs" ms-code-clear-value><i class="fa-solid fa-delete-left" onclick="deleteLeft()"></i></button>
+            <button class="top-signs" onclick="appendToDisplay('%')">%</button>
+            <button class="calculating-signs" onclick="appendToDisplay('/')" id="divide-operator"><i class="fa-solid fa-divide"></i></button>
+            <button class="numbers" onclick="appendToDisplay('7')">7</button>
+            <button class="numbers" onclick="appendToDisplay('8')">8</button>
+            <button class="numbers" onclick="appendToDisplay('9')">9</button>
+            <button class="calculating-signs" onclick="appendToDisplay('*')" id="multiply-operator"><i class="fa-solid fa-xmark"></i></button>
+            <button class="numbers" onclick="appendToDisplay('4')">4</button>
+            <button class="numbers" onclick="appendToDisplay('5')">5</button>
+            <button class="numbers" onclick="appendToDisplay('6')">6</button>
+            <button class="calculating-signs" onclick="appendToDisplay('-')" id="substract-operator">-</button>
+            <button class="numbers" onclick="appendToDisplay('1')">1</button>
+            <button class="numbers" onclick="appendToDisplay('2')">2</button>
+            <button class="numbers" onclick="appendToDisplay('3')">3</button>
+            <button class="calculating-signs" onclick="appendToDisplay('+')" id="add-operator">+</button>
+            <button class="numbers"><i class="fa-solid fa-calculator"></i></button>
+            <button class="numbers" onclick="appendToDisplay('0')">0</button>  
+            <button class="numbers" onclick="appendToDisplay('.')">.</button> 
+            <button class="calculating-signs" id="calculate">=</button>
         </div>
     </div>
 
