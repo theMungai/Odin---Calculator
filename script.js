@@ -24,11 +24,19 @@ deleteLeft.addEventListener('click', () => {
     
 })
 
-// Calculating any calculations from the user
 
-equalSign.addEventListener('click', () => {
-    if(divideOperator){
-        // currentAnswer.textContent = `${(userInput.value )/ (userInput.value)}`
-        userInput.textContent = (userInput.value )/ (userInput.value)
+let operators = [divideOperator, multiplyOperator, addOperator, substractOperator]
+let numbers = []
+
+
+function solveExpression(){
+
+    if(operators === divideOperator){
+        equalSign.addEventListener('click', () => {
+            currentAnswer.textContent = num1 / num2
+        })
     }
-})
+
+
+    
+}
