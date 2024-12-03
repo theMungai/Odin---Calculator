@@ -21,7 +21,25 @@ keys.forEach((key) => {
 
         // Checking if the key value is an operator
         if(key.dataset.type === "operator"){
-            console.log(key)
+            const operatorKeys = key.querySelectorAll('[data-type="operator"]');
+            operatorKeys.forEach((element) => {
+                element.dataset.state = "";
+                
+            })
+
+            key.dataset.state = "selected"
+        }
+
+        // Perform calculation
+        if(key.dataset.type === "equal"){
+            calculate(firstNumber,operator,secondNumber)
         }
     })
+
+    function calculate(firstNumber, operator, secondNumber){
+        if(operator === key.dataset.key === "plus" ){
+            parseFloat(firstNumber + secondNumber)
+        }
+    }
 });
+

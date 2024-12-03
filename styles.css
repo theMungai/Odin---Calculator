@@ -100,16 +100,23 @@ body{
     background-color: gray;
 }
 
-.actions [data-type = "operator"]{
+.actions [data-type = "operator"],
+.actions [data-type = "equal"]{
     background-color: rgb(240, 130, 5);
 }
 
-.actions [data-type = "operator"]:hover{
+.actions [data-type = "operator"]:hover,
+.actions [data-type = "equal"]:hover{
     background-color: rgb(241, 151, 48);
 }
 
-.actions [data-type = "operator"]:active{
+.actions [data-type = "operator"]:active,
+.actions [data-type = "equal"]:active{
     background-color: rgb(241, 168, 83);
+}
+
+[data-state = "selected"]{
+    background-color: #696969;
 }
 
 
