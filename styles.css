@@ -100,15 +100,15 @@ body{
     background-color: gray;
 }
 
-.actions .operator{
+.actions [data-type = "operator"]{
     background-color: rgb(240, 130, 5);
 }
 
-.actions .operator:hover{
+.actions [data-type = "operator"]:hover{
     background-color: rgb(241, 151, 48);
 }
 
-.actions .operator:active{
+.actions [data-type = "operator"]:active{
     background-color: rgb(241, 168, 83);
 }
 
