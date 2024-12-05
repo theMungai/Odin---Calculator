@@ -1,1 +1,2 @@
-# Odin---Calculator
+# Odin Calculator
+Responsive and Interactive Calculator
